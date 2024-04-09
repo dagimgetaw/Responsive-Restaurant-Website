@@ -5,6 +5,7 @@
   --clr-two: #f79327;
   --clr-font: #eeeeee;
   --clr-title: wheat;
+  --clr-muted: #dce1eb;
 }
 * {
   margin: 0;
@@ -120,5 +121,56 @@ button:hover {
   font-size: 1.4em;
 }
 .about .about__page__left img {
+  width: 100%;
+}
+/* ------------------------------------------ */
+.menu__title__one {
+  text-align: center;
+  color: var(--clr-two);
+  padding-top: 6rem;
+}
+.menu__title__two {
+  text-align: center;
+  color: var(--clr-title);
+  padding-bottom: 6rem;
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.menu__first,
+.menu__second,
+.menu__third {
+  background: var(--clr-title);
+  border-radius: 1rem;
+  text-align: center;
+}
+.menu__first .icon,
+.menu__second .icon,
+.menu__third .icon {
+  text-align: right;
+  color: var(--clr-two);
+  cursor: pointer;
+}
+.menu__first img,
+.menu__second img,
+.menu__third img {
+}
+.menu__first h2,
+.menu__second h2,
+.menu__third h2 {
+  color: var(--clr-two);
+  padding-top: 1rem;
+}
+.menu__first p,
+.menu__second p,
+.menu__third p {
+  padding-top: 1rem;
+}
+.text__muted {
+  text-decoration: line-through;
+}
+small {
   width: 100%;
 }
