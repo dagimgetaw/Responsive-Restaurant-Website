@@ -28,8 +28,12 @@ a {
 }
 .nav {
   display: flex;
-  margin: 2rem 0;
-  position: relative;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  background: var(--clr-one);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .nav .nav__logo {
   display: flex;
@@ -45,8 +49,9 @@ a {
   cursor: pointer;
 }
 .nav .nav__item {
+  display: flex;
   position: absolute;
-  right: 0;
+  right: 9rem;
 }
 .nav .nav__item ul {
   display: flex;
