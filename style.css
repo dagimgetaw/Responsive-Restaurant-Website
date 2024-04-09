@@ -156,6 +156,8 @@ button:hover {
 .menu__first img,
 .menu__second img,
 .menu__third img {
+  max-width: 40%;
+  height: auto;
 }
 .menu__first h2,
 .menu__second h2,
@@ -173,4 +175,32 @@ button:hover {
 }
 small {
   width: 100%;
+}
+/* ----------------------------------- */
+.service {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.service__first,
+.service__second,
+.service__third {
+  text-align: center;
+}
+.service__first img,
+.service__second img,
+.service__third img {
+  max-width: 20%;
+  height: auto;
+}
+.service__first h2,
+.service__second h2,
+.service__third h2 {
+  color: var(--clr-two);
+  padding: 1rem 0;
+}
+.service__first p,
+.service__second p,
+.service__third p {
+  color: var(--clr-font);
 }
