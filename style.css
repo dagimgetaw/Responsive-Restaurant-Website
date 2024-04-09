@@ -92,6 +92,7 @@ button:hover {
   border: 0 solid;
   background: var(--clr-two);
   border-radius: 0.3rem;
+  cursor: pointer;
 }
 .home .home__page__left .home__btn .home__link {
   color: var(--clr-font);
@@ -104,7 +105,7 @@ button:hover {
 .about__title {
   text-align: center;
   color: var(--clr-two);
-  padding: 6rem 0;
+  padding-bottom: 6rem;
 }
 .about {
   display: grid;
@@ -244,4 +245,99 @@ ul li {
   padding: 6rem 0 1rem 0;
   text-align: center;
   color: var(--clr-two);
+}
+/* ------------------------------------------- */
+.open__toggler {
+  display: none;
+}
+.close__toggler {
+  display: none;
+}
+@media (max-width: 1053px) {
+  .home .home__page__right img {
+    padding-top: 6rem;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 0px 2rem;
+  }
+  .nav .nav__item {
+    display: none;
+  }
+  .nav .toggler .open__toggler {
+    display: flex;
+    position: absolute;
+    right: 4rem;
+    padding-top: 1rem;
+    cursor: pointer;
+    color: var(--clr-two);
+  }
+}
+@media (max-width: 500px) {
+  .nav .nav__logo span {
+    color: var(--clr-two);
+    padding-top: 1rem;
+    cursor: pointer;
+  }
+  .nav .nav__logo h2 {
+    color: var(--clr-two);
+    padding: 1rem;
+    cursor: pointer;
+  }
+  .home {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .home .home__page__left h2 {
+    color: var(--clr-two);
+    font-size: 2em;
+    text-align: center;
+  }
+  .home .home__page__right img {
+    max-width: 50%;
+    height: auto;
+    margin-left: 8rem;
+    padding-bottom: 3rem;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about .about__page__right h2 {
+    font-size: 2em;
+    color: var(--clr-title);
+    padding: 2rem 0rem 0rem 0rem;
+    text-align: center;
+  }
+  .about .about__page__right p {
+    color: var(--clr-font);
+    padding-top: 2rem;
+    padding-left: 3rem;
+  }
+  .home__btn .home__link {
+    color: var(--clr-font);
+    font-size: 1.4em;
+  }
+  .about .about__page__left img {
+    max-width: 50%;
+    height: auto;
+    margin-left: 8rem;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .service {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .fotter {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    text-align: center;
+  }
 }
