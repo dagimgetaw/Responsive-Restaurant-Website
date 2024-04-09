@@ -8,43 +8,87 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+html {
+  font-size: 14px;
 }
 body {
   background: var(--clr-one);
   font-family: "Poppins", sans-serif;
 }
-.container .nav {
+a {
+  color: var(--clr-font);
+  text-decoration: none;
+}
+.nav {
   display: flex;
   margin: 2rem 6rem;
   position: relative;
 }
-.container .nav .nav__logo {
+.nav .nav__logo {
   display: flex;
 }
-.container .nav .nav__logo span {
+.nav .nav__logo span {
   color: var(--clr-two);
   padding-top: 1rem;
   cursor: pointer;
 }
-.container .nav .nav__logo h2 {
+.nav .nav__logo h2 {
   color: var(--clr-two);
   padding: 1rem;
   cursor: pointer;
 }
-.container .nav .nav__item {
+.nav .nav__item {
   position: absolute;
   right: 0;
 }
-.container .nav .nav__item ul {
+.nav .nav__item ul {
   display: flex;
 }
-.container .nav .nav__item ul li {
-  color: var(--clr-font);
+.nav .nav__item ul li {
   list-style-type: none;
   padding: 1rem;
 }
-.container .nav .nav__item ul li:hover {
+.nav .nav__item ul li a:hover {
   color: var(--clr-two);
   transition: all 300ms ease;
   cursor: pointer;
+}
+/* ------------------------------------------ */
+.home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 10rem;
+  margin: 0 5rem;
+}
+.home .home__page__left {
+  padding: 10rem 2rem;
+}
+.home .home__page__left h2 {
+  color: var(--clr-two);
+  font-size: 3em;
+}
+.home .home__page__left p {
+  color: var(--clr-font);
+  padding-top: 2rem;
+}
+.home .home__page__left button {
+  margin: 2rem;
+}
+.home .home__page__left button:hover {
+  padding: 0.8rem 4rem;
+}
+.home .home__page__left .home__btn {
+  padding: 0.5rem 3rem;
+  border: 0 solid;
+  background: var(--clr-two);
+  border-radius: 0.3rem;
+}
+.home .home__page__left .home__btn .home__link {
+  color: var(--clr-font);
+  font-size: 1.4em;
+}
+.home .home__page__right img {
+  width: 100%;
 }
