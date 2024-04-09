@@ -4,6 +4,7 @@
   --clr-one: #222831;
   --clr-two: #f79327;
   --clr-font: #eeeeee;
+  --clr-title: wheat;
 }
 * {
   margin: 0;
@@ -20,6 +21,9 @@ body {
 a {
   color: var(--clr-font);
   text-decoration: none;
+}
+.container {
+  margin: 0 5rem;
 }
 .nav {
   display: flex;
@@ -59,8 +63,6 @@ a {
 .home {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-left: 10rem;
-  margin: 0 5rem;
 }
 .home .home__page__left {
   padding: 10rem 2rem;
@@ -73,13 +75,13 @@ a {
   color: var(--clr-font);
   padding-top: 2rem;
 }
-.home .home__page__left button {
-  margin: 2rem;
+button {
+  margin: 2rem 3rem;
 }
-.home .home__page__left button:hover {
+button:hover {
   padding: 0.8rem 4rem;
 }
-.home .home__page__left .home__btn {
+.home__btn {
   padding: 0.5rem 3rem;
   border: 0 solid;
   background: var(--clr-two);
@@ -90,5 +92,33 @@ a {
   font-size: 1.4em;
 }
 .home .home__page__right img {
+  width: 100%;
+}
+/* ------------------------------------- */
+.about__title {
+  text-align: center;
+  color: var(--clr-two);
+  padding: 6rem 0;
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.about .about__page__right h2 {
+  font-size: 3em;
+  color: var(--clr-title);
+  padding: 2rem 0rem 0rem 0rem;
+  text-align: center;
+}
+.about .about__page__right p {
+  color: var(--clr-font);
+  padding-top: 2rem;
+  padding-left: 3rem;
+}
+.home__btn .home__link {
+  color: var(--clr-font);
+  font-size: 1.4em;
+}
+.about .about__page__left img {
   width: 100%;
 }
