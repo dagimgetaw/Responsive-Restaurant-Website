@@ -28,7 +28,7 @@ a {
 }
 .nav {
   display: flex;
-  margin: 2rem 6rem;
+  margin: 2rem 0;
   position: relative;
 }
 .nav .nav__logo {
@@ -211,4 +211,32 @@ small {
   text-align: center;
   border-radius: 1rem;
   padding: 6rem;
+}
+/* -------------------------------------------- */
+.fotter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.fotter .menu__links ul h2,
+.fotter .our__service ul h2,
+.fotter .information ul h2,
+.fotter .contact__us ul h2 {
+  color: var(--clr-two);
+  padding-bottom: 1rem;
+}
+ul li {
+  color: var(--clr-font);
+  padding-top: 0.4rem;
+  cursor: pointer;
+}
+.fotter .contact__us ul li {
+  display: inline;
+  padding-right: 2rem;
+  font-size: 1.5em;
+}
+.last {
+  padding: 6rem 0 1rem 0;
+  text-align: center;
+  color: var(--clr-two);
 }
