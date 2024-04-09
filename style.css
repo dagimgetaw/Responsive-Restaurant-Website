@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --clr-one: #222831;
+  --clr-two: #f79327;
+  --clr-font: #eeeeee;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: var(--clr-one);
+  font-family: "Poppins", sans-serif;
+}
+.container .nav {
+  display: flex;
+  margin: 2rem 6rem;
+  position: relative;
+}
+.container .nav .nav__logo {
+  display: flex;
+}
+.container .nav .nav__logo span {
+  color: var(--clr-two);
+  padding-top: 1rem;
+  cursor: pointer;
+}
+.container .nav .nav__logo h2 {
+  color: var(--clr-two);
+  padding: 1rem;
+  cursor: pointer;
+}
+.container .nav .nav__item {
+  position: absolute;
+  right: 0;
+}
+.container .nav .nav__item ul {
+  display: flex;
+}
+.container .nav .nav__item ul li {
+  color: var(--clr-font);
+  list-style-type: none;
+  padding: 1rem;
+}
+.container .nav .nav__item ul li:hover {
+  color: var(--clr-two);
+  transition: all 300ms ease;
+  cursor: pointer;
+}
